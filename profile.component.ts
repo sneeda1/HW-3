@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
     this.activatedRoute
       .params
       .subscribe(params =>
-        this.userId = params['userId']);
+        this.user = params['user']);
   }
 
 }
