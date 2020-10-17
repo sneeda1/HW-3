@@ -13,5 +13,19 @@ export class UserService{
       return user;
       }
       return null;
-    }
+      
+      findUserById( _id: number) {
+      for (let i = 0; i < this.users.length; i++) {
+        const user = this.users[i];
+        if (_id === user._id )
+          return user;
+      }
+
+      return null;
+  }
 }
+    
+  
+  
+  
+
