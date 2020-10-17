@@ -14,7 +14,7 @@ export class UserService{
       }
       return null;
       
-      findUserById( _id: number) {
+      public static findUserById( _id: number) {
       for (let i = 0; i < this.users.length; i++) {
         const user = this.users[i];
         if (_id === user._id )
